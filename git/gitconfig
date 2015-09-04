@@ -1,0 +1,21 @@
+[user]
+	name = wgx
+	email = wgx1116@gmail.com
+[core]
+	editor = vim
+	excludesfile = ~/.gitignore_global
+	ignorecase = false
+[merge]
+	tool = vimdiff
+[diff]
+	tool = vimdiff
+[push]
+	default = simple
+[alias]
+	logg = log --graph --pretty=format:'%C(yellow)%h%Creset - %C(red)%d%Creset <%C(green)%an%Creset>(%C(blue)%cr%Creset) %s%n' --abbrev-commit --date=relative --branches
+[color]
+	status = auto
+	diff = auto
+	branch = auto
+	grep = auto
+	interactive = auto
