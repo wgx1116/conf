@@ -1,0 +1,32 @@
+:set ruler
+:set number
+:hi  LineNr ctermfg=red
+:set ignorecase
+:set hlsearch
+
+:set nowrap
+
+:set list
+:set listchars=tab:>-,eol:$,nbsp:%
+:set expandtab
+:set shiftwidth=4
+:set tabstop=4
+:set autoindent
+:set cindent
+
+" :hi cursor ctermbg=black ctermfg=white
+:set cursorline
+:hi cursorline term=underline cterm=underline " ctermbg=gray " ctermfg=red
+:set cursorcolumn
+:hi cursorcolumn ctermbg=yellow ctermfg=red
+
+" :hi Visual ctermbg=darkgray ctermfg=green
+
+" :set backspace=indent,eol,start
+
+:filetype on
+:filetype plugin on
+:filetype indent on
+:filetype plugin indent on
+
+:syntax on
