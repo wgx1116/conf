@@ -21,6 +21,13 @@
 :hi cursorcolumn ctermbg=yellow ctermfg=red
 " :hi Visual ctermbg=darkgray ctermfg=green
 
+inoremap ( ()<ESC>i
+inoremap [ []<ESC>i
+inoremap { {}<ESC>i
+inoremap < <><ESC>i
+inoremap " ""<ESC>i
+inoremap ' ''<ESC>i
+
 " :set backspace=indent,eol,start
 
 " :set tags+=~/.vim/systags
