@@ -27,6 +27,8 @@ inoremap { {}<ESC>i
 inoremap < <><ESC>i
 inoremap " ""<ESC>i
 inoremap ' ''<ESC>i
+" map <C-K> :pyf ~/.vim/clang-format.py<cr>
+" imap <C-K> <c-o>:pyf ~/.vim/clang-format.py<cr>
 
 " :set backspace=indent,eol,start
 
