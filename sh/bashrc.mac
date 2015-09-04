@@ -1,0 +1,5 @@
+alias ls="ls -G"
+alias ll="ls -lhG"
+
+# . ~/.git-completion.bash
+
