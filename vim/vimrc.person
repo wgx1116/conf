@@ -34,9 +34,9 @@ inoremap ' ''<ESC>i
 " :command Format :silent !clang-format -i %
 " :command Fmt :Format
 
-" :set backspace=indent,eol,start
-
 " :set tags+=~/.vim/systags
+
+" :set backspace=indent,eol,start
 
 :filetype on
 :filetype plugin on
