@@ -15,7 +15,7 @@
 :set cindent
 
 " :hi cursor ctermbg=black ctermfg=white
-:set cursorline
+" :set cursorline
 :hi cursorline term=underline cterm=underline " ctermbg=gray " ctermfg=red
 " :set cursorcolumn
 :hi cursorcolumn ctermbg=yellow " ctermfg=red
