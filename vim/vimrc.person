@@ -1,12 +1,12 @@
 :set ruler
-:set number
+" :set number
 :hi  LineNr ctermfg=red
 :set ignorecase
 :set hlsearch
 
 :set nowrap
 
-:set list
+" :set list
 :set listchars=tab:>-,eol:$,nbsp:%
 :set expandtab
 :set tabstop=8
