@@ -24,6 +24,8 @@ let g:netrw_liststyle=3
 :hi cursorcolumn ctermbg=yellow " ctermfg=red
 " :hi Visual ctermbg=darkgray ctermfg=green
 
+map bf :buffers<cr>
+
 :function RegAutoBracket()
     inoremap ( ()<ESC>i
     inoremap [ []<ESC>i
