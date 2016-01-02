@@ -1,3 +1,24 @@
+:function SetVundle()
+    set nocompatible " required
+    filetype off " required
+    " set the runtime path to include vundle and initialize
+    set rtp+=~/.vim/bundle/Vundle.vim
+    call vundle#begin() " required
+
+    " Let vundle manage itself, required
+    Plugin 'VundleVim/Vundle.vim'
+
+    " Plugins
+
+    " All of your plugins must be added before the following line
+    call vundle#end() " required
+    filetype plugin indent on " required
+:endfunction
+
+" :call SetVundle()
+" Put your non-Plugin stuff after this line
+" ============================
+
 :set ruler
 " :set number
 :hi  LineNr ctermfg=red
@@ -59,8 +80,6 @@ map bf :buffers<cr>
 " :set backspace=indent,eol,start
 
 :filetype on
-:filetype plugin on
-:filetype indent on
 :filetype plugin indent on
 
 :syntax on
