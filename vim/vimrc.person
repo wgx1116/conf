@@ -15,6 +15,8 @@
 :set autoindent
 :set cindent
 
+let g:netrw_liststyle=3
+
 " :hi cursor ctermbg=black ctermfg=white
 " :set cursorline
 :hi cursorline term=underline cterm=underline " ctermbg=gray " ctermfg=red
