@@ -9,6 +9,7 @@
     Plugin 'VundleVim/Vundle.vim'
 
     " Plugins
+    Plugin 'Valloric/YouCompleteMe'
 
     " All of your plugins must be added before the following line
     call vundle#end() " required
