@@ -28,6 +28,9 @@
     \   'lua' : ['.', ':'],
     \   'erlang' : [':'],
     \ }
+    nnoremap <leader>gl :YcmCompleter GoToDeclaration<cr>
+    nnoremap <leader>gf :YcmCompleter GoToDefinition<cr>
+    nnoremap <leader>gg :YcmCompleter GoToDefinitionElseDeclaration<cr>
 :endfunction
 
 " :call SetVundle()
