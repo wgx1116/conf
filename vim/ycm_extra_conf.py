@@ -68,9 +68,9 @@ flags = [
 
 '-isystem', '/usr/include/arpa',
 '-isystem', '/usr/include/bits',
+'-isystem', '/usr/include/c++/4.8.5/',
 '-isystem', '/usr/include/c++/4.8.5/backward',
 '-isystem', '/usr/include/c++/4.8.5/bits',
-'-isystem', '/usr/include/c++/4.8.5/debug',
 '-isystem', '/usr/include/c++/4.8.5/decimal',
 '-isystem', '/usr/include/c++/4.8.5/ext/pb_ds/detail',
 '-isystem', '/usr/include/c++/4.8.5/ext/pb_ds',
@@ -84,7 +84,6 @@ flags = [
 '-isystem', '/usr/include/c++/4.8.5/x86_64-redhat-linux/32/ext',
 '-isystem', '/usr/include/c++/4.8.5/x86_64-redhat-linux/bits',
 '-isystem', '/usr/include/c++/4.8.5/x86_64-redhat-linux/ext',
-'-isystem', '/usr/include/c++/4.8.5/',
 '-isystem', '/usr/include/cairo',
 '-isystem', '/usr/include/clang',
 '-isystem', '/usr/include/clang-c',
