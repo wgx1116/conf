@@ -33,12 +33,24 @@
     nnoremap <leader>gg :YcmCompleter GoToDefinitionElseDeclaration<cr>
 :endfunction
 
-" :call SetVundle()
-" Put your non-Plugin stuff after this line
+:function SetDevelopmentMode()
+    call SetVundle()
+
+    map <C-K> :pyf ~/.vim/clang-format.py<cr>
+    imap <C-K> <c-o>:pyf ~/.vim/clang-format.py<cr>
+
+    set autoread
+    command Format :silent !clang-format -i %
+    command Fmt :Format
+
+    " set tags+=~/.vim/systags
+:endfunction
+
+" :call SetDevelopmentMode()
 " ============================
 
 :set ruler
-" :set number
+:set number
 :hi  LineNr ctermfg=red
 :set ignorecase
 :set hlsearch
@@ -85,15 +97,6 @@ map bf :buffers<cr>
 
 :command AutoBracket :call RegAutoBracket()
 :command UnAutoBracket :call UnRegAutoBracket()
-
-" map <C-K> :pyf ~/.vim/clang-format.py<cr>
-" imap <C-K> <c-o>:pyf ~/.vim/clang-format.py<cr>
-
-" :set autoread
-" :command Format :silent !clang-format -i %
-" :command Fmt :Format
-
-" :set tags+=~/.vim/systags
 
 " :set backspace=indent,eol,start
 
