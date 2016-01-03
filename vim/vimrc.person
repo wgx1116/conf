@@ -14,6 +14,8 @@
     " All of your plugins must be added before the following line
     call vundle#end() " required
     filetype plugin indent on " required
+
+    let g:ycm_confirm_extra_conf=0
 :endfunction
 
 " :call SetVundle()
