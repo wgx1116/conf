@@ -111,6 +111,8 @@ flags = [
 '-isystem', '/usr/include/sys',
 '-isystem', '/usr/include/unicode',
 '-isystem', '/usr/include',
+
+'-I', '.',
 ]
 
 
