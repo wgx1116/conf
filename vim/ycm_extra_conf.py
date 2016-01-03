@@ -64,6 +64,7 @@ flags = [
 '-I', '~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm',
 
 '-isystem', '/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include',
+'-isystem', '/usr/include',
 
 '-isystem', '/usr/include/arpa',
 '-isystem', '/usr/include/bits',
@@ -110,7 +111,6 @@ flags = [
 '-isystem', '/usr/include/rpcsvc',
 '-isystem', '/usr/include/sys',
 '-isystem', '/usr/include/unicode',
-'-isystem', '/usr/include',
 
 '-I', '.',
 ]
