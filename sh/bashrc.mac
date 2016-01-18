@@ -4,3 +4,5 @@ alias ll="ls -lhG"
 # source ~/.git-completion.bash
 # source ~/.git-prompt.sh
 # PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
+
+LC_CTYPE="en_US.UTF-8"
