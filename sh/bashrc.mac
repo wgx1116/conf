@@ -1,6 +1,37 @@
+## ========== common ==========
+# variable ---
+# alias ---
 alias ls="ls -G"
 alias ll="ls -lhG"
+alias ss="open /Applications/ss.app"
 
+## ========== git ==========
+# variable ---
+# PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
+# alias ---
+# other ---
 # source ~/.git-completion.bash
 # source ~/.git-prompt.sh
-# PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
+
+## ========== java ==========
+JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home"
+export JAVA_HOME;
+
+## ========== octinn ==========
+# variable ---
+rd002=rd002.septinn.com
+rq001=rq001.septinn.com
+rq002=rq002.septinn.com
+rq003=rq003.septinn.com
+db002=db002.septinn.com
+db003=db003.septinn.com
+me001=me001.septinn.com
+me002=me002.septinn.com
+OI_APP_ENV=development
+export rd002 rq001 rq002 rq003 db002 db003 me001 me002 OI_APP_ENV;
+# alias ---
+alias sshto="ssh -p 1503"
+alias cdplat="cd /Users/wgx/proj/octinn/platform.git"
+
+## ========== PATH ==========
+export PATH="/usr/local/sbin:$PATH";
