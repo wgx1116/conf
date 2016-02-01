@@ -30,8 +30,16 @@ me002=me002.septinn.com
 OI_APP_ENV=development
 export rd002 rq001 rq002 rq003 db002 db003 me001 me002 OI_APP_ENV;
 # alias ---
-alias sshto="ssh -p 1503"
-alias cdplat="cd /Users/wgx/proj/octinn/platform.git"
+alias sshto="ssh -p 1503";
+alias tord002="sshto wangguoxin@${rd002}";
+alias torq001="sshto wangguoxin@${rq001}";
+alias torq002="sshto wangguoxin@${rq002}";
+alias torq003="sshto wangguoxin@${rq003}";
+alias todb002="sshto wangguoxin@${db002}";
+alias todb003="sshto wangguoxin@${db003}";
+alias tome001="sshto wangguoxin@${me001}";
+alias tome002="sshto wangguoxin@${me002}";
+alias cdplat="cd /Users/wgx/proj/octinn/platform.git";
 
 ## ========== PATH ==========
 export PATH="/usr/local/sbin:$PATH";
