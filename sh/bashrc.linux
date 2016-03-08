@@ -2,7 +2,6 @@
 # variable ---
 # alias ---
 alias view="vim -R"
-# alias FmtJson="/Users/wgx/proj/wgx/util.git/FmtJson"
 
 ## ========== git ==========
 # variable ---
