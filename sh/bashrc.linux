@@ -1,4 +1,20 @@
+## ========== common ==========
+# variable ---
+# alias ---
 alias view="vim -R"
+# alias FmtJson="/Users/wgx/proj/wgx/util.git/FmtJson"
+
+## ========== git ==========
+# variable ---
+# PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
+# alias ---
+# other ---
 # source ~/.git-completion.bash
 # source ~/.git-prompt.sh
-# PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
+
+## ========== java ==========
+# JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home"
+# export JAVA_HOME;
+
+## ========== PATH ==========
+# export PATH="/usr/local/sbin:$PATH";
