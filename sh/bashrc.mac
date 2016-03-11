@@ -41,6 +41,7 @@ alias todb003="sshto wangguoxin@${db003}";
 alias tome001="sshto wangguoxin@${me001}";
 alias tome002="sshto wangguoxin@${me002}";
 alias cdplat="cd /Users/wgx/proj/octinn/platform.git";
+alias cdmobl="cd /Users/wgx/proj/octinn/mobile.git";
 
 ## ========== PATH ==========
 export PATH="/usr/local/sbin:$PATH";
