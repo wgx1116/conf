@@ -4,6 +4,7 @@
 alias ls="ls -G"
 alias ll="ls -lhG"
 alias ss="open /Applications/ss.app"
+alias ts2dt="/Users/wgx/proj/wgx/util.git/ts2dt"
 
 ## ========== git ==========
 # variable ---
