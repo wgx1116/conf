@@ -40,8 +40,8 @@
     imap <C-K> <c-o>:pyf ~/.vim/clang-format.py<cr>
 
     set autoread
-    command Format :silent !clang-format -i %
-    command Fmt :Format
+    command! Format :silent !clang-format -i %
+    command! Fmt :Format
 
     " set tags+=~/.vim/systags
 :endfunction
@@ -95,8 +95,8 @@ map bf :buffers<cr>
     iunmap '
 :endfunction
 
-:command AutoBracket :call RegAutoBracket()
-:command UnAutoBracket :call UnRegAutoBracket()
+:command! AutoBracket :call RegAutoBracket()
+:command! UnAutoBracket :call UnRegAutoBracket()
 
 " :set backspace=indent,eol,start
 
