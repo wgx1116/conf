@@ -1,4 +1,9 @@
 :function! SetVundle()
+
+    if !filereadable('~/.vim/bundle/Vundle.vim')
+        return
+    endif
+
     set nocompatible " required
     filetype off " required
     " set the runtime path to include vundle and initialize
@@ -36,12 +41,14 @@
 :function! SetDevelopmentMode()
     call SetVundle()
 
-    map <C-K> :pyf ~/.vim/clang-format.py<cr>
-    imap <C-K> <c-o>:pyf ~/.vim/clang-format.py<cr>
+    if filereadable('~/.vim/clang-format.py')
+        map <C-K> :pyf ~/.vim/clang-format.py<cr>
+        imap <C-K> <c-o>:pyf ~/.vim/clang-format.py<cr>
 
-    set autoread
-    command! Format :silent !clang-format -i %
-    command! Fmt :Format
+        set autoread
+        command! Format :silent !clang-format -i %
+        command! Fmt :Format
+    endif
 
     " set tags+=~/.vim/systags
 :endfunction
