@@ -1,4 +1,4 @@
-:function SetVundle()
+:function! SetVundle()
     set nocompatible " required
     filetype off " required
     " set the runtime path to include vundle and initialize
@@ -33,7 +33,7 @@
     nnoremap <leader>gg :YcmCompleter GoToDefinitionElseDeclaration<cr>
 :endfunction
 
-:function SetDevelopmentMode()
+:function! SetDevelopmentMode()
     call SetVundle()
 
     map <C-K> :pyf ~/.vim/clang-format.py<cr>
@@ -77,7 +77,7 @@ let g:netrw_liststyle=3
 
 map bf :buffers<cr>
 
-:function RegAutoBracket()
+:function! RegAutoBracket()
     inoremap ( ()<ESC>i
     inoremap [ []<ESC>i
     inoremap { {}<ESC>i
@@ -86,7 +86,7 @@ map bf :buffers<cr>
     inoremap ' ''<ESC>i
 :endfunction
 
-:function UnRegAutoBracket()
+:function! UnRegAutoBracket()
     iunmap (
     iunmap [
     iunmap {
