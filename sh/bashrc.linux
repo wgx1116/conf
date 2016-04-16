@@ -1,7 +1,14 @@
 ## ========== common ==========
 # variable ---
+# Uncomment the following line if you don't like systemctl's auto-paging feature:
+# export SYSTEMD_PAGER=
 # alias ---
 alias view="vim -R"
+# other ---
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
 
 ## ========== git ==========
 # variable ---
