@@ -3,6 +3,9 @@
 # Uncomment the following line if you don't like systemctl's auto-paging feature:
 # export SYSTEMD_PAGER=
 # alias ---
+# alias rm='rm -i'
+# alias cp='cp -i'
+# alias mv='mv -i'
 alias view="vim -R"
 # other ---
 # Source global definitions
