@@ -18,6 +18,12 @@ alias ts2dt="/Users/wgx/proj/wgx/util.git/ts2dt"
 JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home"
 export JAVA_HOME;
 
+## ========== wgx ==========
+# variable ---
+# alias ---
+alias cdioc="cd /Users/wgx/proj/wgx/ioc.git";
+# other ---
+
 ## ========== octinn ==========
 # variable ---
 rd002=rd002.septinn.com
