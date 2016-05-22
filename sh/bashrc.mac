@@ -21,7 +21,8 @@ export JAVA_HOME;
 ## ========== wgx ==========
 # variable ---
 # alias ---
-alias cdioc="cd /Users/wgx/proj/wgx/ioc.git";
+alias cdiooi="cd /Users/wgx/proj/wgx/iooi.git";
+alias cdzlog="cd /Users/wgx/proj/wgx/zlog.git";
 # other ---
 
 ## ========== octinn ==========
