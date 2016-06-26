@@ -3,6 +3,7 @@
 # alias ---
 alias ls="ls -G"
 alias ll="ls -lhG"
+alias lf='t_pwd=`pwd`; for p in `ls -F`; do echo ${t_pwd}/${p}; done;'
 alias ss="open /Applications/ss.app"
 alias airport="/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport"
 
