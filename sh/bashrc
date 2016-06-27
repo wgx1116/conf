@@ -26,9 +26,9 @@
 # fi
 
 ## ========== git ==========
-# PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
-# source ~/.git-completion.bash
-# source ~/.git-prompt.sh
+PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
+source ~/.git-completion.bash
+source ~/.git-prompt.sh
 # mac ---
 # linux ---
 
@@ -76,4 +76,4 @@ alias cdmobl="cd ~/proj/octinn/mobile.git";
 # mac ---
 # export PATH="/usr/local/sbin:$PATH";
 # linux ---
-# export PATH="/usr/local/sbin:$PATH";
+# export PATH="/opt/remi/php56/root/usr/bin:/usr/local/sbin:$PATH";
