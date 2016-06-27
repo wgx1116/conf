@@ -1,10 +1,24 @@
 ## ========== common ==========
-# variable ---
-# alias ---
+# mac variable ---
+# linux variable ---
+# Uncomment the following line if you don't like systemctl's auto-paging feature:
+# export SYSTEMD_PAGER=
+# mac alias ---
 alias ls="ls -G"
 alias ll="ls -lhG"
 alias ss="open /Applications/ss.app"
 alias airport="/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport"
+# linux alias ---
+# alias rm='rm -i'
+# alias cp='cp -i'
+# alias mv='mv -i'
+alias view="vim -R"
+# mac other ---
+# linux other ---
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
 
 ## ========== git ==========
 # variable ---
@@ -15,8 +29,12 @@ alias airport="/System/Library/PrivateFrameworks/Apple80211.framework/Versions/C
 # source ~/.git-prompt.sh
 
 ## ========== java ==========
+# mac jave ---
 JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home"
 export JAVA_HOME;
+# linux jave ---
+# JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home"
+# export JAVA_HOME;
 
 ## ========== wgx ==========
 # variable ---
@@ -50,4 +68,7 @@ alias cdplat="cd /Users/wgx/proj/octinn/platform.git";
 alias cdmobl="cd /Users/wgx/proj/octinn/mobile.git";
 
 ## ========== PATH ==========
+# mac path ---
 export PATH="/usr/local/sbin:$PATH";
+# linux path ---
+# export PATH="/usr/local/sbin:$PATH";
