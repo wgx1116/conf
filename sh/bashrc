@@ -12,13 +12,13 @@ alias airport="/System/Library/PrivateFrameworks/Apple80211.framework/Versions/C
 # alias rm='rm -i'
 # alias cp='cp -i'
 # alias mv='mv -i'
-alias view="vim -R"
+# alias view="vim -R"
 # mac other ---
 # linux other ---
 # Source global definitions
-if [ -f /etc/bashrc ]; then
-	. /etc/bashrc
-fi
+# if [ -f /etc/bashrc ]; then
+# 	. /etc/bashrc
+# fi
 
 ## ========== git ==========
 # variable ---
@@ -39,7 +39,7 @@ export JAVA_HOME;
 ## ========== wgx ==========
 # variable ---
 # alias ---
-alias cdiooi="cd /Users/wgx/proj/wgx/iooi.git";
+alias cdiooi="cd ~/proj/wgx/iooi.git";
 # other ---
 
 ## ========== octinn ==========
@@ -64,8 +64,8 @@ alias todb002="sshto wangguoxin@${db002}";
 alias todb003="sshto wangguoxin@${db003}";
 alias tome001="sshto wangguoxin@${me001}";
 alias tome002="sshto wangguoxin@${me002}";
-alias cdplat="cd /Users/wgx/proj/octinn/platform.git";
-alias cdmobl="cd /Users/wgx/proj/octinn/mobile.git";
+alias cdplat="cd ~/proj/octinn/platform.git";
+alias cdmobl="cd ~/proj/octinn/mobile.git";
 
 ## ========== PATH ==========
 # mac path ---
