@@ -71,6 +71,7 @@ alias tome001="sshto wangguoxin@${me001}";
 alias tome002="sshto wangguoxin@${me002}";
 alias cdplat="cd ~/proj/octinn/platform.git";
 alias cdmobl="cd ~/proj/octinn/mobile.git";
+alias cdapi="cd ~/proj/octinn/api.git";
 
 ## ========== PATH ==========
 # mac ---
