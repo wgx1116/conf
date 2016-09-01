@@ -73,6 +73,14 @@ alias cdplat="cd ~/proj/octinn/platform.git";
 alias cdmobl="cd ~/proj/octinn/mobile.git";
 alias cdapi="cd ~/proj/octinn/api.git";
 
+## ========== PublicIpCentos7 ==========
+# variable ---
+pubIp='120.27.122.169';
+export pubIp;
+
+# alias ---
+alias topub="ssh wgx@${pubIp}";
+
 ## ========== PATH ==========
 # mac ---
 # export PATH="/usr/local/sbin:$PATH";
