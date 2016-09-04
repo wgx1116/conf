@@ -75,11 +75,11 @@ alias cdapi="cd ~/proj/octinn/api.git";
 
 ## ========== PublicIpCentos7 ==========
 # variable ---
-pubIp='120.27.122.169';
-export pubIp;
+# pubIp='120.27.122.169';
+# export pubIp;
 
 # alias ---
-alias topub="ssh wgx@${pubIp}";
+# alias topub="ssh wgx@${pubIp}";
 
 ## ========== PATH ==========
 # mac ---
