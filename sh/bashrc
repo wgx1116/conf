@@ -15,7 +15,7 @@
 # alias rm='rm -i'
 # alias cp='cp -i'
 # alias mv='mv -i'
-# alias view="vim -R"
+# alias view="vim -R" # if view -> vi; cd dir of view; cp view view.orig; ln -sfv vim view;
 
 # other ---
 # mac other ---
