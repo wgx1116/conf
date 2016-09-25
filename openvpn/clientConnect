@@ -1,7 +1,11 @@
 #!/bin/sh
 
-echo '$0='$0;
-echo '$@='"$@";
-# echo '$#='$#;
+echo '< ===== clientConnect =====';
 
+echo '$0='$0;
+echo '$*'=$*;
+echo '$@='"$@";
+echo '$#='$#;
+
+echo '===== clientConnect ===== >';
 exit 0;
