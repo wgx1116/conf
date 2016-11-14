@@ -61,6 +61,7 @@ source ~/.git-prompt.sh
 # variable ---
 # alias ---
 alias cdiooi="cd ~/proj/wgx/iooi.git";
+alias cdyiyi="cd ~/proj/wgx/yiyi.git";
 # other ---
 
 ## ========== octinn ==========
