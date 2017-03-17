@@ -60,7 +60,7 @@ source ~/.git-prompt.sh
 ## ========== wgx ==========
 # variable ---
 # alias ---
-alias cdyiyi="cd ~/proj/wgx/yiyi.git";
+alias cdxx="cd ~/proj/wgx/xx.git";
 # other ---
 
 ## ========== octinn ==========
