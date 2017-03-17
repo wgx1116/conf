@@ -60,7 +60,6 @@ source ~/.git-prompt.sh
 ## ========== wgx ==========
 # variable ---
 # alias ---
-alias cdiooi="cd ~/proj/wgx/iooi.git";
 alias cdyiyi="cd ~/proj/wgx/yiyi.git";
 # other ---
 
@@ -70,12 +69,13 @@ rd002=rd002.septinn.com
 rq001=rq001.septinn.com
 rq002=rq002.septinn.com
 rq003=rq003.septinn.com
+rq005=rq005.septinn.com
 db002=db002.septinn.com
 db003=db003.septinn.com
 me001=me001.septinn.com
 me002=me002.septinn.com
 OI_APP_ENV=development
-export rd002 rq001 rq002 rq003 db002 db003 me001 me002 OI_APP_ENV;
+export rd002 rq001 rq002 rq003 rq005 db002 db003 me001 me002 OI_APP_ENV;
 
 # alias ---
 alias sshto="ssh -p 1503";
@@ -83,6 +83,7 @@ alias tord002="sshto wangguoxin@${rd002}";
 alias torq001="sshto wangguoxin@${rq001}";
 alias torq002="sshto wangguoxin@${rq002}";
 alias torq003="sshto wangguoxin@${rq003}";
+alias torq005="sshto wangguoxin@${rq005}";
 alias todb002="sshto wangguoxin@${db002}";
 alias todb003="sshto wangguoxin@${db003}";
 alias tome001="sshto wangguoxin@${me001}";
