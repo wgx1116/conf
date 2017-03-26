@@ -102,6 +102,6 @@ alias cdapi="cd ~/proj/octinn/api.git";
 
 ## ========== PATH ==========
 # mac ---
-# export PATH="/usr/local/sbin:$PATH";
+# export PATH="/usr/local/sbin:${PATH}:~/bin";
 # linux ---
 # export PATH="/opt/remi/php56/root/usr/bin:/usr/local/sbin:$PATH";
