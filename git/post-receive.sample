@@ -1,0 +1,40 @@
+#!/bin/sh
+#
+# An example hook script for the "post-receive" event.
+#
+# The "post-receive" script is run after receive-pack has accepted a pack
+# and the repository has been updated.  It is passed arguments in through
+# stdin in the form
+#  <oldrev> <newrev> <refname>
+# For example:
+#  aa453216d1b3e49e7f6f98441fa56946ddcd6a20 68f7abf4e6f922807889f52bc043ecd31b79f814 refs/heads/master
+#
+# see contrib/hooks/ for a sample, or uncomment the next line and
+# rename the file to "post-receive".
+
+#. /usr/share/git-core/contrib/hooks/post-receive-email
+
+# env >> /home/wangguoxin/log.log
+# echo '----------' >> /home/wangguoxin/log.log
+gitDir=${GIT_DIR}
+unset GIT_DIR
+# env >> /home/wangguoxin/log.log
+# echo '----------' >> /home/wangguoxin/log.log
+
+deployDir=/opt/www/wangguoxin/shop_dev
+pushd .
+cd $deployDir
+git add -A
+git reset --hard HEAD
+git checkout master
+git pull
+
+for d in 'Resources/Cache/Db' 'Resources/FileSaved/Card' 'Resources/FileSaved/DTemplates' 'Resources/Logs' 'Resources/Smarty/compile/pc' 'Resources/Smarty/compile/h5' 'Resources/compile/shop' 'Resources/Uploads'; do mkdir -p $d; done;
+chmod -R 777 'Resources'
+
+popd
+
+GIT_DIR=${gitDir}
+export GIT_DIR
+# env >> /home/wangguoxin/log.log
+# echo '----------' >> /home/wangguoxin/log.log
