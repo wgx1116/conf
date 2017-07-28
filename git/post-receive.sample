@@ -40,7 +40,7 @@ if [[ -f site.config.wgx.php ]]; then
 fi
 cd ..
 
-for d in 'Resources/Cache/Db' 'Resources/FileSaved/Card' 'Resources/FileSaved/DTemplates' 'Resources/Logs' 'Resources/Smarty/compile/pc' 'Resources/Smarty/compile/h5' 'Resources/compile/shop' 'Resources/Uploads'; do mkdir -p $d; done;
+for d in 'Resources/Cache/Db' 'Resources/FileSaved/Card' 'Resources/FileSaved/DTemplates' 'Resources/Logs' 'Resources/Smarty/compile/pc' 'Resources/Smarty/compile/h5' 'Resources/Smarty/compile/shop' 'Resources/compile/shop' 'Resources/Uploads'; do mkdir -p $d; done;
 chmod -R 777 'Resources'
 
 popd
