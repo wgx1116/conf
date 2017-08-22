@@ -111,3 +111,6 @@ map bf :buffers<cr>
 :filetype plugin indent on
 
 :syntax on
+
+:nnoremap <script> <silent> <unique> <Leader>mo :set mouse=a<CR>
+:nnoremap <script> <silent> <unique> <Leader>mf :set mouse=<CR>
