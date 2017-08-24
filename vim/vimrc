@@ -114,3 +114,5 @@ map bf :buffers<cr>
 
 :nnoremap <script> <silent> <unique> <Leader>mo :set mouse=a<CR>
 :nnoremap <script> <silent> <unique> <Leader>mf :set mouse=<CR>
+:nnoremap <script> <silent> <unique> <Leader>no :set number<CR>
+:nnoremap <script> <silent> <unique> <Leader>nf :set nonumber<CR>
