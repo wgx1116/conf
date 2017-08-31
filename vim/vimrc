@@ -11,10 +11,10 @@
     call vundle#begin() " required
 
     " Let vundle manage itself, required
-    Plugin 'VundleVim/Vundle.vim'
+    " Plugin 'VundleVim/Vundle.vim'
 
     " Plugins
-    Plugin 'Valloric/YouCompleteMe'
+    " Plugin 'Valloric/YouCompleteMe'
 
     " All of your plugins must be added before the following line
     call vundle#end() " required
