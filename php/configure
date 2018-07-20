@@ -1,0 +1,3 @@
+./configure  \
+--prefix=/opt/php  \
+--exec-prefix=/opt/php

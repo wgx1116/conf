@@ -1,0 +1,240 @@
+./configure
+
+# Installation directories:
+--prefix=/opt/php
+--exec-prefix=/opt/php
+
+# Fine tuning of the installation directories:
+--bindir=DIR [EPREFIX/bin]
+--sbindir=DIR [EPREFIX/sbin]
+--libexecdir=DIR [EPREFIX/libexec]
+--sysconfdir=DIR [PREFIX/etc]
+--sharedstatedir=DIR [PREFIX/com]
+--localstatedir=DIR [PREFIX/var]
+--runstatedir=DIR [LOCALSTATEDIR/run]
+--libdir=DIR [EPREFIX/lib]
+--includedir=DIR [PREFIX/include]
+--oldincludedir=DIR [/usr/include]
+--datarootdir=DIR [PREFIX/share]
+--datadir=DIR [DATAROOTDIR]
+--infodir=DIR [DATAROOTDIR/info]
+--localedir=DIR [DATAROOTDIR/locale]
+--mandir=DIR [DATAROOTDIR/man]
+--docdir=DIR [DATAROOTDIR/doc/PACKAGE]
+--htmldir=DIR [DOCDIR]
+--dvidir=DIR [DOCDIR]
+--pdfdir=DIR [DOCDIR]
+--psdir=DIR [DOCDIR]
+
+# System types:
+--build=BUILD
+--host=HOST
+--target=TARGET
+
+# Optional Features and Packages:
+--disable-option-checking
+--disable-FEATURE
+--enable-FEATURE[=ARG]
+--with-PACKAGE[=ARG]
+--without-PACKAGE
+--with-libdir=NAME
+--disable-rpath
+--enable-re2c-cgoto
+--disable-gcc-global-regs
+
+# SAPI modules:
+--with-apxs2=FILE
+--disable-cli
+--enable-embed=TYPE
+--enable-fpm
+--with-fpm-user=USER
+--with-fpm-group=GRP
+--with-fpm-systemd
+--with-fpm-acl
+--with-litespeed
+--enable-phpdbg
+--enable-phpdbg-webhelper
+--enable-phpdbg-debug
+--disable-cgi
+
+# General settings:
+--enable-gcov
+--enable-debug
+--with-layout=TYPE
+--with-config-file-path=PATH
+--with-config-file-scan-dir=PATH
+--enable-sigchild
+--enable-libgcc
+--disable-short-tags
+--enable-dmalloc
+--disable-ipv6
+--enable-dtrace
+--enable-fd-setsize
+
+# Extensions:
+--with-EXTENSION=shared[,PATH]
+--disable-all
+--disable-libxml
+--with-libxml-dir=DIR
+--with-openssl=DIR
+--with-kerberos=DIR
+--with-system-ciphers
+--with-pcre-regex=DIR
+--with-pcre-jit
+--without-sqlite3=DIR
+--with-zlib=DIR
+--with-zlib-dir=<DIR>
+--enable-bcmath
+--with-bz2=DIR
+--enable-calendar
+--disable-ctype
+--with-curl=DIR
+--enable-dba
+--with-qdbm=DIR
+--with-gdbm=DIR
+--with-ndbm=DIR
+--with-db4=DIR
+--with-db3=DIR
+--with-db2=DIR
+--with-db1=DIR
+--with-dbm=DIR
+--with-tcadb=DIR
+--without-cdb=DIR
+--disable-inifile
+--disable-flatfile
+--disable-dom
+--with-libxml-dir=DIR
+--with-enchant=DIR
+--enable-exif
+--disable-fileinfo
+--disable-filter
+--with-pcre-dir
+--enable-ftp
+--with-openssl-dir=DIR
+--with-gd=DIR
+--with-webp-dir=DIR
+--with-jpeg-dir=DIR
+--with-png-dir=DIR
+--with-zlib-dir=DIR
+--with-xpm-dir=DIR
+--with-freetype-dir=DIR
+--enable-gd-native-ttf
+--enable-gd-jis-conv
+--with-gettext=DIR
+--with-gmp=DIR
+--with-mhash=DIR
+--disable-hash
+--without-iconv=DIR
+--with-imap=DIR
+--with-kerberos=DIR
+--with-imap-ssl=DIR
+--with-interbase=DIR
+--enable-intl
+--with-icu-dir=DIR
+--disable-json
+--with-ldap=DIR
+--with-ldap-sasl=DIR
+--enable-mbstring
+--disable-mbregex
+--disable-mbregex-backtrack
+--with-libmbfl=DIR
+--with-onig=DIR
+--with-mcrypt=DIR
+--with-mysqli=FILE
+--enable-embedded-mysqli
+--with-mysql-sock=SOCKPATH
+--with-oci8=DIR
+--with-odbcver=HEX
+--with-adabas=DIR
+--with-sapdb=DIR
+--with-solid=DIR
+--with-ibm-db2=DIR
+--with-ODBCRouter=DIR
+--with-empress=DIR
+--with-empress-bcs=DIR
+--with-birdstep=DIR
+--with-custom-odbc=DIR
+--with-iodbc=DIR
+--with-esoob=DIR
+--with-unixODBC=DIR
+--with-dbmaker=DIR
+--disable-opcache
+--disable-opcache-file
+--disable-huge-code-pages
+--enable-pcntl
+--disable-pdo
+--with-pdo-dblib=DIR
+--with-pdo-firebird=DIR
+--with-pdo-mysql=DIR
+--with-zlib-dir=DIR
+--with-pdo-oci=DIR
+--with-pdo-odbc=flavour,dir
+--with-pdo-pgsql=DIR
+--without-pdo-sqlite=DIR
+--with-pgsql=DIR
+--disable-phar
+--disable-posix
+--with-pspell=DIR
+--with-libedit=DIR
+--with-readline=DIR
+--with-recode=DIR
+--disable-session
+--with-mm=DIR
+--enable-shmop
+--disable-simplexml
+--with-libxml-dir=DIR
+--with-snmp=DIR
+--with-openssl-dir=DIR
+--enable-soap
+--with-libxml-dir=DIR
+--enable-sockets
+--enable-sysvmsg
+--enable-sysvsem
+--enable-sysvshm
+--with-tidy=DIR
+--disable-tokenizer
+--enable-wddx
+--with-libxml-dir=DIR
+--with-libexpat-dir=DIR
+--disable-xml
+--with-libxml-dir=DIR
+--with-libexpat-dir=DIR
+--disable-xmlreader
+--with-libxml-dir=DIR
+--with-xmlrpc=DIR
+--with-libxml-dir=DIR
+--with-libexpat-dir=DIR
+--with-iconv-dir=DIR
+--disable-xmlwriter
+--with-libxml-dir=DIR
+--with-xsl=DIR
+--enable-zip
+--with-zlib-dir=DIR
+--with-pcre-dir
+--with-libzip=DIR
+--enable-mysqlnd
+--disable-mysqlnd-compression-support
+--with-zlib-dir=DIR
+
+# PEAR:
+--with-pear=DIR
+--without-pear
+
+# Zend:
+--enable-maintainer-zts
+--disable-inline-optimization
+--disable-zend-signals
+
+# TSRM:
+--with-tsrm-pth=pth-config
+--with-tsrm-st
+--with-tsrm-pthreads
+
+# Libtool:
+--enable-shared=PKGS
+--enable-static=PKGS
+--enable-fast-install=PKGS
+--with-gnu-ld
+--disable-libtool-lock
+--with-pic
+--with-tags=TAGS
