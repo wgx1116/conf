@@ -1,3 +1,25 @@
 ./configure  \
 --prefix=/opt/php  \
---exec-prefix=/opt/php
+--exec-prefix=/opt/php  \
+--bindir=/usr/local/bin  \
+--sbindir=/usr/local/sbin  \
+--libexecdir=/usr/local/libexec  \
+--sysconfdir=/etc  \
+--sharedstatedir=/usr/local/com  \
+--localstatedir=/var  \
+--runstatedir=/var/run  \
+--libdir=/opt/php/lib  \
+--includedir=/opt/php/include  \
+--oldincludedir=/usr/include  \
+--datarootdir=/usr/local/share  \
+--datadir=/usr/local/share  \
+--infodir=/usr/local/share/info  \
+--localedir=/usr/local/share/locale  \
+--mandir=/usr/local/share/man  \
+--docdir=/usr/local/share/doc/php  \
+--htmldir=/usr/local/share/doc/php  \
+--dvidir=/usr/local/share/doc/php  \
+--pdfdir=/usr/local/share/doc/php  \
+--psdir=/usr/local/share/doc/php  \
+--enable-fpm  \
+--with-fpm-systemd
