@@ -8,6 +8,28 @@
 --pid-path=PATH                    set nginx.pid pathname
 --lock-path=PATH                   set nginx.lock pathname
 
+--http-log-path=PATH               set http access log pathname
+--http-client-body-temp-path=PATH  set path to store http client request body temporary files
+--http-proxy-temp-path=PATH        set path to store http proxy temporary files
+--http-fastcgi-temp-path=PATH      set path to store http fastcgi temporary files
+--http-uwsgi-temp-path=PATH        set path to store http uwsgi temporary files
+--http-scgi-temp-path=PATH         set path to store http scgi temporary files
+
+--without-pcre                     disable PCRE library usage
+--with-pcre                        force PCRE library usage
+--with-pcre=DIR                    set path to PCRE library sources
+--with-pcre-opt=OPTIONS            set additional build options for PCRE
+--with-pcre-jit                    build PCRE with JIT compilation support
+
+--with-openssl=DIR                 set path to OpenSSL library sources
+--with-openssl-opt=OPTIONS         set additional build options for OpenSSL
+
+--with-cc=PATH                     set C compiler pathname
+--with-cpp=PATH                    set C preprocessor pathname
+--with-cc-opt=OPTIONS              set additional C compiler options
+--with-ld-opt=OPTIONS              set additional linker options
+--with-cpu-opt=CPU                 build for the specified CPU, valid values: pentium, pentiumpro, pentium3, pentium4, athlon, opteron, sparc32, sparc64, ppc64
+
 --user=USER                        set non-privileged user for worker processes
 --group=GROUP                      set non-privileged group for worker processes
 
@@ -37,8 +59,15 @@
 --with-http_dav_module             enable ngx_http_dav_module
 --with-http_flv_module             enable ngx_http_flv_module
 --with-http_mp4_module             enable ngx_http_mp4_module
+
 --with-http_gunzip_module          enable ngx_http_gunzip_module
 --with-http_gzip_static_module     enable ngx_http_gzip_static_module
+--without-http_gzip_module         disable ngx_http_gzip_module
+
+--with-zlib=DIR                    set path to zlib library sources
+--with-zlib-opt=OPTIONS            set additional build options for zlib
+--with-zlib-asm=CPU                use zlib assembler sources optimized for the specified CPU, valid values: pentium, pentiumpro
+
 --with-http_auth_request_module    enable ngx_http_auth_request_module
 --with-http_random_index_module    enable ngx_http_random_index_module
 --with-http_secure_link_module     enable ngx_http_secure_link_module
@@ -47,7 +76,7 @@
 --with-http_stub_status_module     enable ngx_http_stub_status_module
 
 --without-http_charset_module      disable ngx_http_charset_module
---without-http_gzip_module         disable ngx_http_gzip_module
+
 --without-http_ssi_module          disable ngx_http_ssi_module
 --without-http_userid_module       disable ngx_http_userid_module
 --without-http_access_module       disable ngx_http_access_module
@@ -79,13 +108,6 @@
 --with-http_perl_module=dynamic    enable dynamic ngx_http_perl_module
 --with-perl_modules_path=PATH      set Perl modules path
 --with-perl=PATH                   set perl binary pathname
-
---http-log-path=PATH               set http access log pathname
---http-client-body-temp-path=PATH  set path to store http client request body temporary files
---http-proxy-temp-path=PATH        set path to store http proxy temporary files
---http-fastcgi-temp-path=PATH      set path to store http fastcgi temporary files
---http-uwsgi-temp-path=PATH        set path to store http uwsgi temporary files
---http-scgi-temp-path=PATH         set path to store http scgi temporary files
 
 --without-http                     disable HTTP server
 --without-http-cache               disable HTTP cache
@@ -122,26 +144,7 @@
 
 --with-compat                      dynamic modules compatibility
 
---with-cc=PATH                     set C compiler pathname
---with-cpp=PATH                    set C preprocessor pathname
---with-cc-opt=OPTIONS              set additional C compiler options
---with-ld-opt=OPTIONS              set additional linker options
---with-cpu-opt=CPU                 build for the specified CPU, valid values: pentium, pentiumpro, pentium3, pentium4, athlon, opteron, sparc32, sparc64, ppc64
-
---without-pcre                     disable PCRE library usage
---with-pcre                        force PCRE library usage
---with-pcre=DIR                    set path to PCRE library sources
---with-pcre-opt=OPTIONS            set additional build options for PCRE
---with-pcre-jit                    build PCRE with JIT compilation support
-
---with-zlib=DIR                    set path to zlib library sources
---with-zlib-opt=OPTIONS            set additional build options for zlib
---with-zlib-asm=CPU                use zlib assembler sources optimized for the specified CPU, valid values: pentium, pentiumpro
-
 --with-libatomic                   force libatomic_ops library usage
 --with-libatomic=DIR               set path to libatomic_ops library sources
-
---with-openssl=DIR                 set path to OpenSSL library sources
---with-openssl-opt=OPTIONS         set additional build options for OpenSSL
 
 --with-debug                       enable debug logging

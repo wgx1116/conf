@@ -1,1 +1,8 @@
 ./configure  \
+--prefix=/opt/nginx  \
+--sbin-path=/usr/local/sbin/nginx  \
+--conf-path=/etc/nginx/nginx.conf  \
+--error-log-path=/var/log/nginx/error.log  \
+--pid-path=/run/nginx/nginx.pid  \
+--http-log-path=/var/log/nginx/access.log  \
+--with-http_ssl_module
