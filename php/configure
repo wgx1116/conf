@@ -24,4 +24,5 @@
 --pdfdir=/usr/local/share/doc/php  \
 --psdir=/usr/local/share/doc/php  \
 --enable-fpm  \
---with-fpm-systemd
+--with-fpm-systemd  \
+--with-pear=/usr/local/php/lib/pear
