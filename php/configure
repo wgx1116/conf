@@ -1,6 +1,6 @@
 ./configure  \
---prefix=/opt/php  \
---exec-prefix=/opt/php  \
+--prefix=/usr/local/php  \
+--exec-prefix=/usr/local/php  \
 --bindir=/usr/local/bin  \
 --sbindir=/usr/local/sbin  \
 --libexecdir=/usr/local/libexec  \
@@ -8,9 +8,9 @@
 --sharedstatedir=/usr/local/com  \
 --localstatedir=/var  \
 --runstatedir=/var/run  \
---libdir=/opt/php/lib  \
---includedir=/opt/php/include  \
---oldincludedir=/usr/include  \
+--libdir=/usr/local/php/lib  \
+--includedir=/usr/local/php/include  \
+--oldincludedir=/usr/local/php/oldinclude  \
 --datarootdir=/usr/local/share  \
 --datadir=/usr/local/share  \
 --infodir=/usr/local/share/info  \
