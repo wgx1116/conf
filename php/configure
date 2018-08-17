@@ -4,7 +4,7 @@
 --bindir=/usr/local/bin  \
 --sbindir=/usr/local/sbin  \
 --libexecdir=/usr/local/libexec  \
---sysconfdir=/etc  \
+--sysconfdir=/etc/php  \
 --with-config-file-path=/etc/php  \
 --with-config-file-scan-dir=/etc/php/conf.d  \
 --sharedstatedir=/usr/local/com  \
