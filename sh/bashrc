@@ -1,3 +1,9 @@
+## ========== global ==========
+# Source global definitions
+# if [ -f /etc/bashrc ]; then
+# 	. /etc/bashrc
+# fi
+
 ## ========== locale environment variable ==========
 # LANG=
 # LC_CTYPE=
@@ -37,10 +43,15 @@
 # other ---
 # mac other ---
 # linux other ---
-# Source global definitions
-# if [ -f /etc/bashrc ]; then
-# 	. /etc/bashrc
-# fi
+
+## ========== wgx ==========
+# variable ---
+# pubIp='120.27.122.169';
+# export pubIp;
+# alias ---
+# alias topub="ssh wgx@${pubIp}";
+alias cdxx="cd ~/proj/wgx/xx.git";
+# other ---
 
 ## ========== git ==========
 PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
@@ -56,49 +67,6 @@ source ~/.git-prompt.sh
 # linux ---
 # JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home"
 # export JAVA_HOME;
-
-## ========== wgx ==========
-# variable ---
-# alias ---
-alias cdxx="cd ~/proj/wgx/xx.git";
-# other ---
-
-## ========== octinn ==========
-# variable ---
-rd002=rd002.septinn.com
-rq001=rq001.septinn.com
-rq002=rq002.septinn.com
-rq003=rq003.septinn.com
-rq005=rq005.septinn.com
-db002=db002.septinn.com
-db003=db003.septinn.com
-me001=me001.septinn.com
-me002=me002.septinn.com
-OI_APP_ENV=development
-export rd002 rq001 rq002 rq003 rq005 db002 db003 me001 me002 OI_APP_ENV;
-
-# alias ---
-alias sshto="ssh -p 1503";
-alias tord002="sshto wangguoxin@${rd002}";
-alias torq001="sshto wangguoxin@${rq001}";
-alias torq002="sshto wangguoxin@${rq002}";
-alias torq003="sshto wangguoxin@${rq003}";
-alias torq005="sshto wangguoxin@${rq005}";
-alias todb002="sshto wangguoxin@${db002}";
-alias todb003="sshto wangguoxin@${db003}";
-alias tome001="sshto wangguoxin@${me001}";
-alias tome002="sshto wangguoxin@${me002}";
-alias cdplat="cd ~/proj/octinn/platform.git";
-alias cdmobl="cd ~/proj/octinn/mobile.git";
-alias cdapi="cd ~/proj/octinn/api.git";
-
-## ========== PublicIpCentos7 ==========
-# variable ---
-# pubIp='120.27.122.169';
-# export pubIp;
-
-# alias ---
-# alias topub="ssh wgx@${pubIp}";
 
 ## ========== PATH ==========
 # mac ---
