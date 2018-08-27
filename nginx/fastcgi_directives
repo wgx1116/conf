@@ -56,3 +56,8 @@ fastcgi_cache_max_range_offset
 
 fastcgi_store
 fastcgi_store_access
+
+##########
+
+$fastcgi_script_name
+$fastcgi_path_info
