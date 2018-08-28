@@ -3,7 +3,6 @@ server
 server_name
 server_names_hash_bucket_size
 server_names_hash_max_size
-server_tokens
 listen
 location
 internal
@@ -19,6 +18,9 @@ keepalive_requests
 keepalive_timeout
 max_ranges
 merge_slashes
+if_modified_since
+ignore_invalid_headers
+underscores_in_headers
 
 client_body_buffer_size
 client_body_in_file_only
@@ -35,9 +37,7 @@ types_hash_bucket_size
 types_hash_max_size
 default_type
 etag
-if_modified_since
-ignore_invalid_headers
-underscores_in_headers
+server_tokens
 
 aio
 aio_write
