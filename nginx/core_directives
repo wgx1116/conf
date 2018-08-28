@@ -1,34 +1,33 @@
+daemon
 user
 pid
-lock_file
 error_log
 
-env
-include
+lock_file
 events
 use
-
 accept_mutex
 accept_mutex_delay
 multi_accept
+worker_connections
+worker_aio_requests
 
 working_directory
 worker_processes
 worker_cpu_affinity
 worker_priority
-worker_connections
-worker_aio_requests
 worker_rlimit_core
 worker_rlimit_nofile
 worker_shutdown_timeout
 
+env
+include
 load_module
 pcre_jit
 ssl_engine
 thread_pool
 timer_resolution
 
-daemon
 master_process
-debug_connection
+debug_connection  # events
 debug_points
