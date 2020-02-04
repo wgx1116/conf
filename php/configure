@@ -25,4 +25,8 @@
 --psdir=/usr/local/share/doc/php  \
 --enable-fpm  \
 --with-fpm-systemd  \
---with-pear=/usr/local/php/lib/pear
+--with-pear=/usr/local/php/lib/pear  \
+--with-openssl  \
+--with-curl  \
+--with-pdo-mysql  \
+--with-mysqli
