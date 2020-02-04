@@ -1,0 +1,157 @@
+mysql_install_db --user=mysql 或者 /usr/sbin/mysqld --initialize-insecure --user=mysql
+systemctl start mysqld.service
+mysql_secure_installation
+mysql -u root -p
+> use mysql;
+> create user 'admin' identified by 'admin';
+> GRANT ALL ON *.* TO 'admin';
+> exit;
+
+[mysql3320]
+mysql_install_db --datadir=/var/lib/mysql3320 --user=mysql
+或者
+cd  /usr;
+/usr/sbin/mysqld  \
+--basedir=/usr  \
+--datadir=/var/lib/mysql3320  \
+--plugin-dir=/usr/lib64/mysql/plugin  \
+--user=mysql  \
+--log-error=/var/lib/mysql3320/tx_centos7.err  \
+--pid-file=tx_centos7.pid  \
+--socket=/var/lib/mysql3320/mysql.sock  \
+--port=3320  --initialize-insecure
+
+<-- /etc/my3320.cnf
+[server]
+default-authentication-plugin=mysql_native_password
+user=mysql
+datadir=/var/lib/mysql3320
+socket=/var/lib/mysql3320/mysql.sock
+port=3320
+
+pid-file=/var/run/mysqld/mysqld3320.pid
+log-error=/var/log/mysqld3320.log
+-->
+
+nohup mysqld_safe --defaults-file=/etc/my3320.cnf &
+或者
+cd  /usr;
+nohup /usr/sbin/mysqld  \
+--defaults-file=/etc/my3320.cnf  \
+--basedir=/usr  \
+--datadir=/var/lib/mysql3320  \
+--plugin-dir=/usr/lib64/mysql/plugin  \
+--user=mysql  \
+--log-error=/var/lib/mysql3320/tx_centos7.err  \
+--pid-file=tx_centos7.pid  \
+--socket=/var/lib/mysql3320/mysql.sock  \
+--port=3320  &
+
+export MYSQL_UNIX_PORT=/var/lib/mysql3320/mysql.sock
+mysql_secure_installation
+
+mysql -u root -p -S /var/lib/mysql3320/mysql.sock
+> use mysql;
+> create user 'afu' identified by 'dBxR/vACH+ytBMvQ/LkyiA==';
+> GRANT ALL ON *.* TO 'afu';
+> exit;
+
+
+[mysql3330]
+mysql_install_db --datadir=/var/lib/mysql3330 --user=mysql
+或者
+cd  /usr;
+/usr/sbin/mysqld  \
+--basedir=/usr  \
+--datadir=/var/lib/mysql3330  \
+--plugin-dir=/usr/lib64/mysql/plugin  \
+--user=mysql  \
+--log-error=/var/lib/mysql3330/tx_centos7.err  \
+--pid-file=tx_centos7.pid  \
+--socket=/var/lib/mysql3330/mysql.sock  \
+--port=3330  --initialize-insecure
+
+<-- /etc/my3330.cnf
+[server]
+default-authentication-plugin=mysql_native_password
+user=mysql
+datadir=/var/lib/mysql3330
+port=3330
+socket=/var/lib/mysql3330/mysql.sock
+
+pid-file=/var/run/mysqld/mysqld3330.pid
+log-error=/var/log/mysqld3330.log
+-->
+
+nohup mysqld_safe --defaults-file=/etc/my3330.cnf &
+或者
+cd  /usr;
+nohup /usr/sbin/mysqld  \
+--defaults-file=/etc/my3330.cnf  \
+--basedir=/usr  \
+--datadir=/var/lib/mysql3330  \
+--plugin-dir=/usr/lib64/mysql/plugin  \
+--user=mysql  \
+--log-error=/var/lib/mysql3330/tx_centos7.err  \
+--pid-file=tx_centos7.pid  \
+--socket=/var/lib/mysql3330/mysql.sock  \
+--port=3330  &
+
+export MYSQL_UNIX_PORT=/var/lib/mysql3330/mysql.sock
+mysql_secure_installation
+
+mysql -u root -p -S /var/lib/mysql3330/mysql.sock
+> use mysql;
+> create user 'afu' identified by 'dBxR/vACH+ytBMvQ/LkyiA==';
+> GRANT ALL ON *.* TO 'afu';
+> exit;
+
+
+[mysql3340]
+mysql_install_db --datadir=/var/lib/mysql3340 --user=mysql
+或者
+cd  /usr;
+/usr/sbin/mysqld  \
+--basedir=/usr  \
+--datadir=/var/lib/mysql3340  \
+--plugin-dir=/usr/lib64/mysql/plugin  \
+--user=mysql  \
+--log-error=/var/lib/mysql3340/tx_centos7.err  \
+--pid-file=tx_centos7.pid  \
+--socket=/var/lib/mysql3340/mysql.sock  \
+--port=3340  --initialize-insecure
+
+<-- /etc/my3340.cnf
+[server]
+default-authentication-plugin=mysql_native_password
+user=mysql
+datadir=/var/lib/mysql3340
+port=3340
+socket=/var/lib/mysql3340/mysql.sock
+
+pid-file=/var/run/mysqld/mysqld3340.pid
+log-error=/var/log/mysqld3340.log
+-->
+
+nohup mysqld_safe --defaults-file=/etc/my3340.cnf &
+或者
+cd  /usr;
+nohup /usr/sbin/mysqld  \
+--defaults-file=/etc/my3340.cnf  \
+--basedir=/usr  \
+--datadir=/var/lib/mysql3340  \
+--plugin-dir=/usr/lib64/mysql/plugin  \
+--user=mysql  \
+--log-error=/var/lib/mysql3340/tx_centos7.err  \
+--pid-file=tx_centos7.pid  \
+--socket=/var/lib/mysql3340/mysql.sock  \
+--port=3340  &
+
+export MYSQL_UNIX_PORT=/var/lib/mysql3340/mysql.sock
+mysql_secure_installation
+
+mysql -u root -p -S /var/lib/mysql3340/mysql.sock
+> use mysql;
+> create user 'afu' identified by 'dBxR/vACH+ytBMvQ/LkyiA==';
+> GRANT ALL ON *.* TO 'afu';
+> exit;
