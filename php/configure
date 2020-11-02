@@ -9,7 +9,6 @@
 --with-config-file-scan-dir=/etc/php/conf.d  \
 --sharedstatedir=/usr/local/com  \
 --localstatedir=/var  \
---runstatedir=/var/run  \
 --libdir=/usr/local/php/lib  \
 --includedir=/usr/local/php/include  \
 --oldincludedir=/usr/local/php/oldinclude  \
