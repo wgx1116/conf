@@ -16,21 +16,22 @@ cd  /usr;
 --datadir=/var/lib/mysql3320  \
 --plugin-dir=/usr/lib64/mysql/plugin  \
 --user=mysql  \
---log-error=/var/lib/mysql3320/tx_centos7.err  \
---pid-file=tx_centos7.pid  \
+--log-error=/var/log/mysql/mysqld3320.log  \
+--pid-file=/var/run/mysql/mysqld3320.pid  \
 --socket=/var/lib/mysql3320/mysql.sock  \
 --port=3320  --initialize-insecure
 
 <-- /etc/my3320.cnf
 [server]
+mysqlx=0
 default-authentication-plugin=mysql_native_password
 user=mysql
 datadir=/var/lib/mysql3320
 socket=/var/lib/mysql3320/mysql.sock
 port=3320
 
-pid-file=/var/run/mysqld/mysqld3320.pid
-log-error=/var/log/mysqld3320.log
+log-error=/var/log/mysql/mysqld3320.log
+pid-file=/var/run/mysql/mysqld3320.pid
 -->
 
 nohup mysqld_safe --defaults-file=/etc/my3320.cnf &
@@ -42,8 +43,8 @@ nohup /usr/sbin/mysqld  \
 --datadir=/var/lib/mysql3320  \
 --plugin-dir=/usr/lib64/mysql/plugin  \
 --user=mysql  \
---log-error=/var/lib/mysql3320/tx_centos7.err  \
---pid-file=tx_centos7.pid  \
+--log-error=/var/log/mysql/mysqld3320.log  \
+--pid-file=/var/run/mysql/mysqld3320.pid  \
 --socket=/var/lib/mysql3320/mysql.sock  \
 --port=3320  &
 
@@ -66,21 +67,22 @@ cd  /usr;
 --datadir=/var/lib/mysql3330  \
 --plugin-dir=/usr/lib64/mysql/plugin  \
 --user=mysql  \
---log-error=/var/lib/mysql3330/tx_centos7.err  \
---pid-file=tx_centos7.pid  \
+--log-error=/var/log/mysql/mysqld3330.log  \
+--pid-file=/var/run/mysql/mysqld3330.pid  \
 --socket=/var/lib/mysql3330/mysql.sock  \
 --port=3330  --initialize-insecure
 
 <-- /etc/my3330.cnf
 [server]
+mysqlx=0
 default-authentication-plugin=mysql_native_password
 user=mysql
 datadir=/var/lib/mysql3330
-port=3330
 socket=/var/lib/mysql3330/mysql.sock
+port=3330
 
-pid-file=/var/run/mysqld/mysqld3330.pid
-log-error=/var/log/mysqld3330.log
+log-error=/var/log/mysql/mysqld3330.log
+pid-file=/var/run/mysql/mysqld3330.pid
 -->
 
 nohup mysqld_safe --defaults-file=/etc/my3330.cnf &
@@ -92,8 +94,8 @@ nohup /usr/sbin/mysqld  \
 --datadir=/var/lib/mysql3330  \
 --plugin-dir=/usr/lib64/mysql/plugin  \
 --user=mysql  \
---log-error=/var/lib/mysql3330/tx_centos7.err  \
---pid-file=tx_centos7.pid  \
+--log-error=/var/log/mysql/mysqld3330.log  \
+--pid-file=/var/run/mysql/mysqld3330.pid  \
 --socket=/var/lib/mysql3330/mysql.sock  \
 --port=3330  &
 
@@ -116,21 +118,22 @@ cd  /usr;
 --datadir=/var/lib/mysql3340  \
 --plugin-dir=/usr/lib64/mysql/plugin  \
 --user=mysql  \
---log-error=/var/lib/mysql3340/tx_centos7.err  \
---pid-file=tx_centos7.pid  \
+--log-error=/var/log/mysql/mysqld3340.log  \
+--pid-file=/var/run/mysql/mysqld3340.pid  \
 --socket=/var/lib/mysql3340/mysql.sock  \
 --port=3340  --initialize-insecure
 
 <-- /etc/my3340.cnf
 [server]
+mysqlx=0
 default-authentication-plugin=mysql_native_password
 user=mysql
 datadir=/var/lib/mysql3340
-port=3340
 socket=/var/lib/mysql3340/mysql.sock
+port=3340
 
-pid-file=/var/run/mysqld/mysqld3340.pid
-log-error=/var/log/mysqld3340.log
+log-error=/var/log/mysql/mysqld3340.log
+pid-file=/var/run/mysql/mysqld3340.pid
 -->
 
 nohup mysqld_safe --defaults-file=/etc/my3340.cnf &
@@ -142,8 +145,8 @@ nohup /usr/sbin/mysqld  \
 --datadir=/var/lib/mysql3340  \
 --plugin-dir=/usr/lib64/mysql/plugin  \
 --user=mysql  \
---log-error=/var/lib/mysql3340/tx_centos7.err  \
---pid-file=tx_centos7.pid  \
+--log-error=/var/log/mysql/mysqld3340.log  \
+--pid-file=/var/run/mysql/mysqld3340.pid  \
 --socket=/var/lib/mysql3340/mysql.sock  \
 --port=3340  &
 
