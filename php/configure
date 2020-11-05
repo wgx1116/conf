@@ -28,4 +28,5 @@
 --with-openssl  \
 --with-curl  \
 --with-pdo-mysql  \
---with-mysqli
+--with-mysqli  \
+--with-zip
